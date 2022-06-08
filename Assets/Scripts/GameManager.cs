@@ -47,6 +47,11 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void LoadScene(string sceneName) {
+        Debug.Log("LOAD SCNE");
+        SceneManager.LoadScene(sceneName);
+    }
+
     private void StartGame()
     {
         ui.ShowStartLabel();
